@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Menu, X } from "lucide-react"
 import { navItems } from './Constants';
+import logo from './assets/logo.png';
 
   const NavBar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -15,7 +16,7 @@ import { navItems } from './Constants';
             <div className="container px-4 mx-auto relative text-sm">
                 <div className="flex justify-between items-center ">
                     <div className="flex items-center flex-shrink-0">
-                        <img className='h-10 w-10 mr-2 rounded-xl' src="src\assets\logo.png" alt="" />
+                        <img className='h-10 w-10 mr-2 rounded-xl' src={logo} alt="" />
                         <span className="text-xl tracking-light">VirtualR</span>
                     </div>
                     <ul className='hidden lg:flex flex-row justify-center items-center ml-14 space-x-12'>
